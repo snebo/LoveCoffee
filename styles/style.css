@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Kalam', cursive;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+}
+
+.pageContainer{
+    padding:5px;
+    border-radius: 3px;
+}
+
+.navBar{
+    color: azure;
+    background-color: #ad6d2f;
+    padding:20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navBar>div{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.navBar>div>img{
+    border-radius: 50%;
+    transform: rotate(-90deg);
+}
+.heading{
+    font-size: 30px;
+    font-weight: bold;
+}
+.navLinks{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:50px;
+    list-style-type: none;
+}
+.grabCup{
+    padding: 10px;
+    border:2px solid white;
+    border-radius: 30px;
+}
+a{
+    color: azure;
+    text-decoration: none;
+}
