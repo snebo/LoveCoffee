@@ -24,10 +24,15 @@
     gap: 15px;
     align-items: center;
 }
-.navBar>div>img{
+#logo{
     border-radius: 50%;
     transform: rotate(-90deg);
     border: 2px solid azure;
+    cursor: pointer;
+    transition: 900ms;
+}
+#logo:hover{
+    transform: rotate(300deg);
 }
 .heading{
     font-size: 30px;
@@ -74,17 +79,49 @@ a{
     margin-bottom: 30px;
 }
 button{
-    padding: 10px;
-    border-radius: 20px;
-    border: 3px  solid #37251b;
-    background-color: #d2c1b0;
-    color: #ad6d2f;
-    font-size: 18px;
+    padding: 12px;
+    border-radius: 30px;
+    border: 3px  solid white;
+    background-color:#ad6d2f;
+    color: azure;
+    font-size: 20px;
     cursor: pointer;
+    transition: 500ms;
+}
+button:hover{
+    background-color: #d2c1b0;
+    color: white;
+    transform: scale(1.1);
 }
 .mainImage{
     object-fit: contain;
     max-width: 700px; 
-    border-radius: 10px;
+    border-radius: 30px;
     border: 2px solid white;
+}
+
+.sectionB{
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    background-color: #d2c1b0;
+    color: #37251b;
+    padding: 7% 14%;
+}
+.card{
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+}
+.card>div>img{
+    width: 300px;
+    height: 300px;
+    border: 2px solid azure;
+    border-radius: 20px;
+    margin-bottom: 30px;
 }
