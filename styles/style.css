@@ -112,7 +112,8 @@ button:hover{
 }
 .mainImage{
     object-fit: contain;
-    max-width: 700px; 
+    width: 700px;
+    height: auto; 
     border-radius: 30px;
     border: 2px solid white;
 }
@@ -198,4 +199,55 @@ h5{
 }
 .sym{
     font-size: 25px;
+}
+
+/* making it resoponsive */
+@media screen and (max-width: 600px) {
+    .heading{
+        font-size: 24px;
+    }
+    .navBar{
+        padding: 5px 10px;
+    }
+    .navBar>div{
+        gap: 5px;
+    }
+    .sectionA{
+        flex-wrap: wrap-reverse;
+    }
+    .sectionA>div{
+        flex-basis: 100%;
+    }
+    .navLinks{
+        gap: 10px;
+    }
+    .mainImage{
+        min-width: 300px;
+        height: auto;
+    }
+    .sectionB{
+        justify-content: center;
+    }
+}
+@media screen and (max-width:900px) and (min-width:600px){
+    .heading{
+        font-size: 24px;
+    }
+    .navLinks{
+        gap: 10px;
+    }
+    .navBar{
+        padding: 20px;
+    }
+    .mainImage{
+        min-width: 500px;
+        height: auto;
+    }
+    .sectionA{
+        flex-wrap: wrap-reverse;
+    }
+    .sectionA>div{
+        flex-basis: 100%;
+    }
+
 }
