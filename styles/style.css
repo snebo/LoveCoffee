@@ -202,15 +202,37 @@ h5{
 }
 
 /* making it resoponsive */
+
 @media screen and (max-width: 600px) {
     .heading{
-        font-size: 24px;
+        font-size: 16px;
+    }
+    #logo{
+        width: 50px;
+        height: auto;
+    }
+    li>a{
+        font-size: 11px;
     }
     .navBar{
         padding: 5px 10px;
     }
     .navBar>div{
-        gap: 5px;
+        gap: 3px;
+    }
+    .navLinks{
+        font-size: 12px;
+    }
+    .grabCup{
+        padding: 3px;
+        border:2px solid white;
+        border-radius: 20px;
+        transition: 300ms;
+        color: azure;
+    }
+    .grabCup:hover{
+        border: 2px solid #37251b;
+        color: #37251b;
     }
     .sectionA{
         flex-wrap: wrap-reverse;
